@@ -21,9 +21,9 @@ const create = async(req,res)=>{
         })
     }
 }
-    const signin = async(req,res)=>{
+    const signIn = async(req,res)=>{
         try {
-            const response = await userService.signin(req.body.email, req.body.password)
+            const response = await userService.signIn(req.body.email, req.body.password);
             return res.status(201).json({
                 data: response,
                 success: true,
@@ -40,5 +40,5 @@ const create = async(req,res)=>{
     }
 module.exports = {
     create,
-    signin
+    signIn
 }
