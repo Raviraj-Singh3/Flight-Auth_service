@@ -47,7 +47,7 @@ const create = async(req,res)=>{
                 success: true,
                 err: {},
                 data: response,
-                message: 'token is authenticated'
+                message: 'token is authenticated and token is valid'
         })
         } catch (error){
             return res.status(500).json({
