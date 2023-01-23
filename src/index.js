@@ -15,9 +15,9 @@ createAndStartServer = ()=>{
     app.listen(PORT, async()=>{
         console.log("server started at ",PORT)
        //db.sequelize.sync({alter: true});
-       const u1 = await User.findByPk(17);
-       const r1 = await Role.findByPk(2);
-       u1.addRole(r1);
+    //    const u1 = await User.findByPk(17);
+    //    const r1 = await Role.findByPk(2);
+    //    u1.addRole(r1);
     //    const response = await u1.hasRole(r1);
     //    console.log(response);
     })

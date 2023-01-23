@@ -7,6 +7,7 @@ const router = express.Router();
 router.post('/signup', AuthRequestValidators.validateUserAuth, UserController.create);
 router.post('/signin', AuthRequestValidators.validateUserAuth, UserController.signIn);
 router.get('/authenticated', UserController.authenticated);
+router.get('/isAdmin', AuthRequestValidators.validateIsAdmin, UserController.isAdmin)
 
 
 module.exports = router;
